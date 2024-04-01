@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/OkmToken-REACT/static/css/main.f855e6bc.css",
+    "main.js": "/OkmToken-REACT/static/js/main.363399b5.js",
+    "index.html": "/OkmToken-REACT/index.html",
+    "main.f855e6bc.css.map": "/OkmToken-REACT/static/css/main.f855e6bc.css.map",
+    "main.363399b5.js.map": "/OkmToken-REACT/static/js/main.363399b5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.363399b5.js"
+  ]
+}
