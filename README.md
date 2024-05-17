@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# MetaMask Wallet Connection and Transaction App
+This React application connects to the MetaMask wallet and allows the user to send Ethereum transactions. It provides functionality to connect to a user's MetaMask wallet, display their account address and balance, and send transactions to other addresses.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Connect to MetaMask:
+Click the "Connect Wallet Button" to connect your MetaMask wallet.
 
-## Available Scripts
+## View Address and Balance:
+Once connected, the application will display your account address and balance.
 
-In the project directory, you can run:
+## Send Transactions:
+Enter the recipient's address in the input field and click "Submit" to send a transaction.
 
-### `npm start`
+## Code Explanation
+### State Variables
+errorMessage:  Stores any error messages to display to the user.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+defaultAccount: Stores the currently connected MetaMask account address.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+userBalance: Stores the balance of the connected account.
 
-### `npm test`
+## Connecting to MetaMask
+The connectWallet function is triggered when the user clicks the "Connect Wallet Button". It requests the user's MetaMask account and updates the state with the account address.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Handling Account Changes
+The accountChanged function updates the defaultAccount state and retrieves the balance for the new account.
 
-### `npm run build`
+## Getting User Balance
+The getUserBalance function retrieves the balance of the connected account and updates the userBalance state.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Sending Transactions
+The sendTransaction function sends a transaction from the connected MetaMask account to a specified address.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Conclusion
+This README provides an overview of the MetaMask Wallet Connection and Transaction App. This setup will allow users to connect their MetaMask wallets, view their Ethereum account details, and send transactions.
